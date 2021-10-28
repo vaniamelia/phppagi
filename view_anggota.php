@@ -17,7 +17,7 @@ $query_view=mysqli_query($koneksi,"select * from anggota");
       <td><?php echo $no++;?></td>
       <td><?php echo $tampil ['nama'];?></td>
       <td><?php echo $tampil ['alamat'];?></td>
-      <td><?php echo $tampil ['no-tlpn'];?></td>
+      <td><?php echo $tampil ['no_tlpn'];?></td>
   </tr>
 <?php }?>
 
