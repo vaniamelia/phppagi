@@ -1,19 +1,20 @@
 <?php
 include("koneksi.php");
 
-if (isset($_POST['save'])){
-    $nama=$_POST['nama'];
-    $alamat=$_POST['alamat'];
-		$notelp=$_POST['no_tlpn'];
-    $query=mysqli_query($koneksi,"INSERT INTO anggota(nama, alamat, no_tlpn) 
-    value ('$nama','$alamat','$notelp')");
-if($query) {
-    header ("location:view_anggota.php");
-} else {
-    echo mysqli_error ();
 
-}
-}
+if(isset($_POST['save'])){
+	$query_input=mysqli_query($koneksi,"insert into anggota(nama,alamat,no_tlpn)
+	values(
+	'".$_POST['nama']."',
+	'".$_POST['alamat']."',
+	'".$_POST['no_tlpn']."')");
+	
+	if($query_input){
+	header('location:view_anggota.php');
+	}else{
+		echo mysqli_error();
+	}
+	}
 ?>
 <form method="POST">
 <table class="table table-bordered" border="1">
@@ -26,7 +27,7 @@ if($query) {
 		<td><input type="text" name="alamat" class="form-control"></td>
 	</tr>	
 	<tr>
-    <td>No Telepon</td>
+    <td>No Tlpn</td>
 		<td><input type="text" name="no_tlpn" class="form-control"></td>
 	</tr>	
 	<tr>
