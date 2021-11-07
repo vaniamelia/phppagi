@@ -3,6 +3,7 @@ include ("koneksi.php");
 $query_view=mysqli_query($koneksi,"select * from barang");
 
 ?>
+</br>
 <a href="input_barang.php" class="btn btn-danger">Tambah barang</a>
 <table class="table table-bordered" border="1">
   <tr>
