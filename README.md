@@ -1,2 +1,0 @@
-# phppagi
-projec reg pagi
