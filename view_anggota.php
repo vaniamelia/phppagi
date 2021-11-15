@@ -1,9 +1,10 @@
 <?php
 include ("koneksi.php");
 session_start();
-if(!($_SESSION['username'])){
-  echo "<SCRIPT>alert('silahkan login terlebih dahulu !');window.location='index.php'</SCRIPT>";
+if($_SESSION['username']){
+	echo "<SCRIPT>alert('silahkan login terlebih dahulu');window.location='index.php'</SCRIPT>";
 }
+
 $query_view=mysqli_query($koneksi,"select * from anggota");
 ?>
 </br>
