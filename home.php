@@ -5,7 +5,7 @@ include 'koneksi.php';
 session_start();
  
 // cek apakah user telah login, jika belum login maka di alihkan ke halaman login
-if(!($_SESSION['level'] == "")){
+if($_SESSION['level'] == ""){
 	echo "<SCRIPT>alert('silahkan login terlebih dahulu');window.location='index.php'</SCRIPT>";
 }
 ?>
