@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2021 at 03:05 AM
+-- Generation Time: Dec 03, 2021 at 01:33 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -45,9 +45,8 @@ CREATE TABLE `cuti_karyawan` (
 --
 
 INSERT INTO `cuti_karyawan` (`id_karyawan`, `NIK`, `nama`, `jabatan`, `bagian`, `mulai_cuti`, `berakhir_cuti`, `keterangan`, `jenis_cuti`, `sisa_cuti`) VALUES
-(10, '32122333444', 'raden', 'Admin', 'Produksi', '2021-12-11', '2021-12-13', 'menikah', '', 0),
-(16, '3546274894984', 'desi', 'Manager', 'Produksi', '2021-12-04', '2021-12-06', 'menikah', 'khusus', 0),
-(17, '345678907666', 'raya', 'Manager', 'Produksi', '2021-12-10', '2021-12-13', 'menikah', 'khusus', 6);
+(22, '35647389292', 'REZA', 'Manager', 'Hrd', '2021-12-17', '2021-12-20', 'menikah', 'khusus', 10),
+(23, '367897222', 'mayang', 'Leader', 'Marketing', '2021-12-16', '2021-12-23', 'melahirkan', 'khusus', 20);
 
 --
 -- Indexes for dumped tables
@@ -67,7 +66,7 @@ ALTER TABLE `cuti_karyawan`
 -- AUTO_INCREMENT for table `cuti_karyawan`
 --
 ALTER TABLE `cuti_karyawan`
-  MODIFY `id_karyawan` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_karyawan` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
